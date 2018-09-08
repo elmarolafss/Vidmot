@@ -1,0 +1,93 @@
+body {
+  background-color: #2d3436;
+  height: 100vh;
+  position: relative;
+}
+
+.goo-wrapper {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: url("#goo");
+  width: 400px;
+  height: 400px;
+}
+
+.goo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.goo-btn {
+  background-color: #ecf0f1;
+  border: none;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2d3436;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  transition: 0.5s transform;
+  position: absolute;
+}
+
+
+.goo-btn--1.active {
+  transform: translate(-105px, -105px);
+}
+.goo-btn--2.active {
+  transform: translateX(135px);
+}
+.goo-btn--3.active {
+  transform: translateY(-135px);
+}
+.goo-btn--4.active {
+  transform: translateX(-135px);
+}
+.goo-btn--5.active {
+  transform: translate(105px, -105px);
+}
+.goo-btn--6.active {
+  transform: translate(105px, 105px);
+}
+.goo-btn--7.active {
+  transform: translate(-105px, 105px);
+}
+.goo-btn--8.active {
+  transform: translateY(135px);
+}
+.goo-icon {
+  font-size: 20px;
+}
+
+.goo-toggler {
+  position: absolute;
+  top: 0;
+  background-color: #ecf0f1;
+  border: none;
+  color: #2d3436;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  z-index: 10;
+  cursor: pointer;
+  font-size: 28px;
+  transition: 0s all ease-in-out;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.goo-toggler:focus, .goo-toggler:active {
+  outline: none;
+}

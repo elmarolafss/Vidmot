@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="svg.css">
+	<title>SVG</title>
+</head>
+<body>
+<div class="goo">
+  <div class="goo-wrapper">
+    <button class="goo-toggler">
+        <i class="fas fa-plus">Menu</i>
+    </button>
+    <ul class="goo-list">
+      <li class="goo-item">
+        <button class="goo-btn goo-btn--1">
+          <i class="goo-icon fab fa-codepen">Item 2</i>
+        </button>
+      </li>
+      <li class="goo-item">
+        <button class="goo-btn goo-btn--2">
+          <i class="goo-icon fab fa-github">Item 5</i>
+        </button>
+      </li>
+      <li class="goo-item">
+        <button class="goo-btn goo-btn--3">
+          <i class="goo-icon far fa-file-code">Item 3</i>
+        </button>
+      </li>
+      <li class="goo-item">
+        <button class="goo-btn goo-btn--4">
+          <i class="goo-icon fab fa-linkedin-in">Item 1</i>
+        </button>
+      </li>
+      <li class="goo-item">
+        <button class="goo-btn goo-btn--5">
+          <i class="goo-icon fab fa-linkedin-in">Item 4</i>
+        </button>
+      </li>
+            <li class="goo-item">
+        <button class="goo-btn goo-btn--6">
+          <i class="goo-icon fab fa-codepen">Item 6</i>
+        </button>
+      </li>
+      <li class="goo-item">
+        <button class="goo-btn goo-btn--7">
+          <i class="goo-icon fab fa-github">Item 8</i>
+        </button>
+      </li>
+      <li class="goo-item">
+        <button class="goo-btn goo-btn--8">
+          <i class="goo-icon far fa-file-code">Item 7</i>
+        </button>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+  <defs>
+    <filter id="fancy-goo">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+      <feBlend in="SourceGraphic" in2="goo" operator="atop"/>
+  	</filter>
+  </defs>
+</svg>
+</body>
+
+<script type="text/javascript">
+document.querySelector(".goo-toggler").addEventListener("click", function() {
+ let els= document.querySelectorAll(".goo-btn");
+  for(let i=0; i < els.length; i++){
+    els[i].classList.toggle('active');
+  };
+document.querySelector(".goo-toggler").classList.toggle("active");});
+</script>
+
+</html>
