@@ -12,4 +12,12 @@
 ## 2.
 ### Þríhyrningar geta ekki verið óformlegur, allt sem er óformlegr getur ekki verið renderað í grafík.
 ## 3.
-### 
+### 1. Undirbúa hornpunkta í array
+### 2. Hornpunktavinnsla
+### 3. Hornpunkta eftirvinnsla
+### 4. "Primitive Assembly", Hef ekki hugmynd hvað það er en það þarf að gerast..
+### 5. Rasterization er þegar öll "Primitive" eru brotin niður í þætti sem kallaðir eru "fragments" eða bara brot.
+### 6. fragment shader, fer yfir hvert brot, hvert brot skapar fjölda output-a.
+### 7. Per-Sample Processing, output-in úr fragment shadernum eru farin yfir og gögnin eru skrifuð í buffer.
+### Mynd fylgir í "Verkefni-2" möppu.
+
