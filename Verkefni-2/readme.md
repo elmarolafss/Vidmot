@@ -20,4 +20,6 @@
 ### 6. fragment shader, fer yfir hvert brot, hvert brot skapar fjölda output-a.
 ### 7. Per-Sample Processing, output-in úr fragment shadernum eru farin yfir og gögnin eru skrifuð í buffer.
 ### Mynd fylgir í "Verkefni-2" möppu.
+## 4.
+### 
 
