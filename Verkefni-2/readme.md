@@ -21,5 +21,9 @@
 ### 7. Per-Sample Processing, output-in úr fragment shadernum eru farin yfir og gögnin eru skrifuð í buffer.
 ### Mynd fylgir í "Verkefni-2" möppu.
 ## 4.
-### 
+### Fylki eru notuð til að einfalda hluti, léttara að debugga og færri villur.
+## 5.
+### Vertex Shader: skapar hnit
+### Fragment shader: Skapar lit fyrir pixelinn sem er verið að "rasterize-a"
+
 
