@@ -23,6 +23,7 @@
 ## 4.
 ### Fylki eru notuð til að einfalda hluti, léttara að debugga og færri villur.
 ## 5.
+### það eru 2 WebGl shaders.
 ### Vertex Shader: skapar hnit
 ### Fragment shader: Skapar lit fyrir pixelinn sem er verið að "rasterize-a"
 
